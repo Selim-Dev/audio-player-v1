@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: 'Pushster', cursive, sans-serif;
+  color: #333;
+  line-height: 1.5;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+
+  /* background: linear-gradient(to top left, #28b487, #7dd56f); */
+}
+.background::before {
+  background: url('https://www.farmersalmanac.com/wp-content/uploads/2020/07/midpoint-summer-a87110021.jpg');
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+  z-index: -1;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.buttons {
+  width: 100%;
+  justify-content: center;
+}
+input {
+  /* padding: 2px; */
+}
+.buttons button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.gallery img {
+  width: 400px;
+}
+.container {
+  width: fit-content;
+  margin: auto;
+  padding: 20px;
+}
+.button {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(13, 123, 143);
+  color: white;
+  border-radius: 20%;
+  cursor: pointer;
+}
+#changeAudioRange {
+  width: 200px;
+}
+.form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.img {
+  display: block;
+  width: 40%;
+  height: 200px;
+  margin: auto;
+  border-radius: 20px;
+}
+.container {
+  margin-top: 20px;
+  border: 2px solid burlywood;
+}
+.list-container {
+  margin-left: 22%;
+  margin-top: 20px;
+  width: 50%;
+}
+.list-group {
+  /* list-style: none; */
+  width: 100%;
+}
+
+/* test */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ol {
+  list-style: none;
+  margin: auto;
+  /* float: center; */
+  width: 800px;
+  border: 5px red solid;
+  background: url('https://www.farmersalmanac.com/wp-content/uploads/2020/07/midpoint-summer-a87110021.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 50%;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+ol li {
+  width: 100%;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+/* ol li a{
+
+} */
+ol li:hover {
+  background-color: rgb(21, 155, 121);
+  color: black;
+  font-weight: 900;
+}
+.active {
+  background-color: rgb(21, 155, 121);
+  color: black;
+  font-weight: 900;
+}
+h1 {
+}

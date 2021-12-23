@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <style></style>
+  </head>
+  <body>
+    <h1>Audio Player</h1>
+    <div class="container">
+      <img class="img" src="images/fightback.jpg" alt="" />
+      <button onclick="play()" class="button">Play</button>
+      <button onclick="stop()" class="button">stop</button>
+      <button onclick="pause()" class="button">pause</button>
+      <button onclick="mute()" class="button">mute</button>
+      <br />
+      <div class="form-group">
+        <label for="">Volume</label>
+        <input
+          oninput="myRange()"
+          step="0.1"
+          id="range"
+          type="range"
+          max="1"
+          min="0"
+          value="1"
+        />
+        <span class="volumeNumber">0</span>
+      </div>
+      <div class="form-group">
+        <label for="">Player</label>
+        <input
+          oninput="changeAudioRange()"
+          step="1"
+          id="changeAudioRange"
+          type="range"
+          max="10"
+          min="0"
+        />
+        <span class="currentTime">0</span>/
+        <span class="totalDuration">0</span>
+      </div>
+
+      <audio id="aud" src="audio/fightback.mp3">Audio</audio>
+    </div>
+    <div class="list-container">
+      <ol class="list-group">
+        <li class="list-group-items active" onclick="fightback()">
+          Fight Back
+        </li>
+        <li class="list-group-items" onclick="grateful()">Grateful</li>
+        <li class="list-group-items" onclick="heart()">Heart</li>
+      </ol>
+    </div>
+    <div class="background"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
